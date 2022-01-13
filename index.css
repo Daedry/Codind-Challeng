@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.wrapper {
+  background-image: url(background1.jpg);
+  width: 96.4vw;
+  height: 96.4vh;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  display: flex;
+  justify-content: center;
+}
+
+div.container {
+  position: relative;
+  top: 28px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 18px;
+  padding-bottom: 6%;
+  color: white;
+  width: 1100px;
+  height: 715px;
+}
+
+header > h1 {
+  color: rgb(0, 212, 0);
+  font-weight: 400;
+  margin-bottom: -1.5px;
+}
+
+.logo {
+  width: 220px;
+  margin-top: 9%;
+  margin-bottom: -20px;
+  cursor: pointer;
+  transition: 0.25 ease;
+}
+
+.logo:hover {
+  transform: scale(1.04);
+}
+
+.barra-menu {
+  background-color: rgb(0, 212, 0);
+  margin-left: 8%;
+  margin-right: 8%;
+  line-height: 44px;
+}
+
+nav > button {
+  cursor: pointer;
+  transition: 0.25 ease;
+}
+
+nav > button:active {
+  transform: scale(0.8);
+}
+
+main {
+  text-align: left;
+  margin-left: 8%;
+  margin-top: 3%;
+}
+
+main strong {
+  font-size: 23px;
+  cursor: pointer;
+}
+
+main h4 {
+  margin: 0;
+  font-weight: 300;
+}
+
+.corpo1 > .carica {
+  background-color: #f1b54c;
+  width: 32%;
+  height: 27px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  transition: 0.25s ease;
+}
+
+.corpo1 > .carica:hover {
+  width: 14%;
+  background-color: #ad3a3a;
+}
+
+.corpo2 > .carica {
+  background-color: rgb(0, 212, 0);
+  width: 55%;
+  height: 27px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+
+.corpo3 > .carica {
+  background-color: #ad3a3a;
+  width: 14%;
+  height: 27px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+
+.corpo1 > input,
+.corpo2 > input,
+.corpo3 > input {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.lim {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 160px;
+  width: 100%;
+}
+
+.loader {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 145px;
+  width: 145px;
+  animation-name: spin;
+  animation-duration: 2500ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

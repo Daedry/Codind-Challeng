@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Taking Booleaners from A to B</title>
+  </head>
+  <body>
+    <div id="loading" class="wrapper">
+      <div class="flex">
+        <img class="loader" src="loader.png" />
+        <img class="lim" src="lim.png" />
+      </div>
+    </div>
+  </body>
+  <script>
+    const addWrapperContent = () =>
+      setTimeout(() => {
+        let wrapper = document.getElementById("loading");
+
+        wrapper.innerHTML = 
+        `<div class="container">
+
+         <header>
+           <img draggable="false" class="logo" src="logo.png" >
+           <h1> Taking Booleaners from A to B </h1>
+         </header>
+
+          <nav class="barra-menu"> <!-- barra, menu -->
+           <button type="button" name="button">Prenota </button>
+           <button type="button" name="button">Termina Prenotazione</button>
+           <button type="button" name="button">Accendi luci</button>
+          </nav>
+
+          <main>
+
+           <div class="corpo1"><!-- Monopattino gino -->
+             <input type="checkbox" name="" value="">
+             <strong> Monopattino Gino22 </strong>
+             <h4>&#8614; Via Guadalametri-a 220 metri da te</h4>
+             <h4> Stato carica: </h4>
+             <div class="carica"></div>
+           </div>
+
+           <div class="corpo2"><!-- monopattino mike -->
+             <input type="checkbox" name="" value="">
+             <strong> Monopattino Mike24 </strong>
+             <h4>&#8614; Via Ricciardoni-a 420 metri da te</h4>
+             <h4> Stato carica: </h4>
+             <div class="carica"></div>
+           </div>
+  
+           <div class="corpo3"><!-- monopattinofede154 -->
+             <input type="checkbox" name="" value="">
+             <strong> Monopattino Fede154 </strong>
+             <h4>&#8614; Via Mentarini-a 490 metri da te</h4>
+             <h4> Stato carica: </h4>
+             <div class="carica"></div>
+           </div>
+
+         </main>
+         
+       </div>`;
+      }, 4000);
+    window.onload = addWrapperContent;
+  </script>
+</html>
